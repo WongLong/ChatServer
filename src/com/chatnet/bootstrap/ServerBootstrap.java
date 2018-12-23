@@ -9,6 +9,7 @@ import com.chatnet.util.DataBaseUtil;
 
 public class ServerBootstrap {
 	public static void main(String[] args) {
+		System.out.println("hello");
 
 		DataBaseUtil.loadTable();	// 创建实体表
 		new Thread(new RegisterServerListener(12000)).start();	// 开启注册服务
